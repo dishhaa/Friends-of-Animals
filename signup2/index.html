@@ -1,0 +1,121 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account</title>
+    <style>
+        body {
+            background-image: url(../img/paw-hand-friendship-dog.png);
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 1.25em;
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        nav {
+            margin: 100px auto;
+            text-align: center;
+        }
+        
+        nav ul {
+            margin-left: 0;
+            padding-left: 0;
+            width: 500px;
+            list-style: none;
+            position: relative;
+            display: inline-table;
+        }
+        
+        nav ul ul {
+            display: none;
+        }
+        
+        nav ul li:hover>ul {
+            display: block;
+        }
+        
+        nav ul li {
+            float: left;
+            width: 500px;
+            text-align: left;
+            border-bottom: 3px solid #2e9fccd7;
+        }
+        
+        nav ul li:hover {
+            background: #aca3a36b;
+        }
+        
+        nav ul li a {
+            display: block;
+            padding: 15px 10px;
+            color: black;
+            text-decoration: none;
+        }
+        
+        nav ul ul {
+            border-radius: 0px;
+            padding: 0;
+            position: absolute;
+            top: 100%;
+        }
+        
+        nav ul ul li {
+            float: none;
+            border-bottom: 2px solid #eaeaea;
+            position: relative;
+        }
+        
+        nav ul ul li a {
+            padding: 15px 10px;
+            color: rgb(19, 18, 18);
+        }
+        
+        nav ul ul li a:hover {
+            background: #47a8d57e;
+            color: rgb(19, 18, 18);
+        }
+        
+        #down-triangle {
+            float: right;
+            width: 0;
+            height: 0;
+            margin-top: 10px;
+            border-top: 10px solid #2ea7cc;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+        }
+        
+        .circle {
+            float: right;
+            display: inline;
+            width: 10px;
+            height: 10px;
+            margin-top: 5px;
+            border: 3px solid #4b94d8;
+            -moz-border-radius: 100%;
+            -webkit-border-radius: 100%;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">How do you want to help?<div id="down-triangle"></div></a>
+                <ul>
+                    <li><a href="#">Become a friend to help animals<div class="circle"></div></a></li>
+                    <li><a href="#">Student- I would like to submit my work<div class="circle"></div></a></li>
+                    <li><a href="#">School/College/Private/Institution<div class="circle"></div></a></li>
+                    <li><a href="#">NGOs/Animal/Shelter/others<div class="circle"></div></a></li>
+                    <li><a href="#">Animal rescuer<div class="circle"></div></a></li>
+                    <li><a href="#">Government Hospital /Institution / corporation<div class="circle"></div></a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Verification</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="error"></div>
+        <form id="mobile-verification">
+            <div class="heading">We have just sent an OTP to your mobile number</div>
+            <div class="row">
+                <input type="number" id="mobile" class="input" placeholder="Enter 6 digit OTP">
+            </div>
+            <a href="/login">
+                <input type="button" class="btnsubmit" value="Verify" onclick="sendOTP();">
+            </a>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

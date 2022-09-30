@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="../styles/mine.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <title>Sign in</title>
+</head>
+
+<body>
+  <div class="main">
+    <p class="sign" align="center">Sign In</p>
+    <form class="form1" id="myform">
+      <input class="un " type="text" align="center" placeholder="Username" required>
+      <input class="pass" type="password" align="center" placeholder="Password" required>
+      <input type="submit" name="submit" class="submit" align="center" value="Sign In">
+      <!-- <a class="submit" align="center">Sign in</a> -->
+      <p class="forgot" align="center"><a href="#">Forgot Password?</a></p>
+            
+     </form>           
+    </div>
+  
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+  <script>
+    $(document).ready(function(){
+        $("#myform").validate();
+    });
+  </script>
+  <style>
+    .error{
+        color:red;
+    }
+  </style>
+     
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 0.9em;
+    color: #212121;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    opacity: 10;
+   
+}
+
+.container{
+    width: 350px;
+    margin: 50px auto;
+    box-sizing: border-box;
+    background-color: rgb(203, 214, 214);
+}
+#mobile-verification{
+    border: #e0e0e0 1px solid;
+    border-radius: 3px;
+    padding: 30px;
+    text-align: center;
+}
+.heading{
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+.row{
+    margin-bottom: 30px;
+}
+.input{
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: #e0e0e0 1px solid;
+}
+.btnsubmit{
+    background: #4cb7ff;
+    padding: 8px 20px;
+    border: #47abef 1px solid;
+    border-radius: 3px;
+    width: 100%;
+    color: #fff;
+}
+

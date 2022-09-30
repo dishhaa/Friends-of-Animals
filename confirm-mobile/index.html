@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Verification</title>
+
+    <!-- Hide Arrows From Input Number -->
+  <style>
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+  </style>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#mobile-verification").validate();
+    });
+</script>
+<style>
+    .error{
+        color:red;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="error"></div>
+        <form action="otp-confirm/index.html" id="mobile-verification">
+            <div class="heading">Mobile Number Verification</div>
+            <div class="row">
+                <input type="number" id="mobile" class="input" placeholder="Enter 10 digit mobile number" required>
+            </div>
+            <!-- <a href="./otp-confirm"> -->
+                <input type="submit" class="btn btn-primary btnsubmit" value="Send OTP">
+            <!-- </a> -->
+        </form>
+    </div>
+
+</body>
+
+</html>

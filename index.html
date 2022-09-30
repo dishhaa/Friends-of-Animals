@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+  .     <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Yellowtail&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/mine.css">
+
+       <title>Friends-Of-Animals</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            padding: 5px;
+            width: 100%;
+        }
+
+        .swiper-container {
+            height: 400px;
+            width: 100%;
+        }
+
+        .swiper-slide {
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom mnavbar" bgcolor="#efa693">
+        <a class="navbar-brand" href="myimg/logo.jpeg"><img src="myimg/logo.jpeg" width="200px" height="200px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <div class="col col-4 mx-auto px-3 my-1 text-center">
+                            <p class="hover-link">Home</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <div class="col col-4 mx-auto px-3 my-1 text-center">
+                            <p class="hover-link">Competitions</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="$">
+                        <div class="col col-4 mx-auto px-3 my-1 text-center">
+                            <p class="hover-link">Blog</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                       <div class="col col-4 mx-auto px-3 my-1 text-center">
+                            <p class="hover-link">Gallery</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <div class="col col-4 mx-auto px-3 my-1 text-center">
+                            <p class="hover-link">Activity</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <div class="col mx-auto px-3 my-1 text-center">
+                            <p class="hover-link">Contact Us</p>
+                        </div>
+                    </a>
+                </li>
+
+                <div class="row nav-item my-1">
+                    <div class="col col-2 px-2 ml-auto mr-5 text-center">
+                        <a href="login/mine.html"><button class="btn btn-lgn-custom" style="background-color: #efa693;">Login</button></a>
+                    </div>
+
+                    <div class="col col-2 px-2 ml-5 mr-auto text-center">
+                        <a href="./signup/index.html"><button class="btn btn-sgn-custom" style="background-color: #efa693;">Signup</button></a>
+                    </div>
+                </div>
+
+            </ul>
+        </div>
+    </nav>
+    <hr>
+
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+
+            <div class="swiper-slide" style="background-image: url(./img/slid4.jpg);">Monkeys</div>
+            <div class="swiper-slide" style="background-image: url(./img/ver1.jpg);">🌝Animals🌝</div>
+            <div class="swiper-slide" style="background-image: url(./img/slide.webp);">🏆Compititions🏆 </div>
+            <div class="swiper-slide" style="background-image: url(./img/slid3.jpg);">Sreet Cows</div>
+            <div class="swiper-slide" style="background-image: url(./img/acti.jpg);">Activities</div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+
+
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            effect: 'cube',
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+    <hr>
+
+    <section>
+        <div class="sidebag"> </div>
+            <div class="row">
+                <div class="col-sm-9 col-md-6 mx-auto">
+                    <div class="col-sm-9 text-center">
+                        <h3>Welcome To
+                        </h3>
+                    </div>
+                    <div class=" slo col-sm-9 text-center">
+                        <h1 style="font-family: 'Original Surfer', capital;"> FRIENDS OF ANIMALS</h1>
+                    </div> 
+              
+                <div class="col-sm-9 text-center">
+                    <h6>Friends of Animals (FoA)- is a community of Animal Lovers and we believe that Animals deserve LOVE and CARE. Its your turn to select what you want.</h6>
+                </div>
+                <!-- <div class="col-12 text-center">
+                    <a href="#"><button class="btn btn-lgn-custom mr-2">View More</button></a>
+
+                </div> -->
+            </div>
+
+
+        </div>
+
+         <div class="sidebag"> </div>
+            <div class="row">
+                <div class="col-sm-9 col-md-6 mx-auto">
+                    <ul class="media" align="center">
+                        <li>
+                            <a href="https://www.facebook.com/Friends-of-animals-100838705478534" target="_blank"><img src="./myimg/fb.png" alt="Facebook" height="100px" width="100px" style="margin: 20px;"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./myimg/twitter.png" alt="Twitter" height="100px" width="100px" style="margin: 20px;"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./myimg/linkdin.png" alt="Linkdin" height="100px" width="100px" style="margin: 20px;"></a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/friendsofanimals9?igshid=1hk8fs7mkg31n" target="_blank"><img src="./myimg/instagram.png" alt="instagram" height="100px" width="100px" style="margin: 20px;"></a>
+                        </li>
+                    </ul>
+                </div>
+
+
+        </div>
+
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 3,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            loop: true
+        });
+    </script>
+    <hr>
+    <section class="  bg-opacity-75 text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">WHAT WE DO?</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We refuse to accept the claim of the powerful
+                    fellow humans - that God granted them superiority, and they have the right to be cruel to animals.
+                    No human holds the authority to use animals for their welfare – wear. experiment on them for
+                    medical purposes, or abuse them for entertainment or in the name of culture, etc We accept and
+                    promote that all beings share similar fundamental values. Help Us</p>
+            </div>
+            <div class="flex flex-wrap -m-4 text-center">
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                            <path d="M8 17l4 4 4-4m-4-5v9"></path>
+                            <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
+                        </svg>
+                        <h2 class="title-font font-medium text-3xl text-gray-900">2.7K</h2>
+                        <p class="leading-relaxed">Downloads</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+                        </svg>
+                        <h2 class="title-font font-medium text-3xl text-gray-900">50</h2>
+                        <p class="leading-relaxed">volunteer</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                            <path d="M3 18v-6a9 9 0 0118 0v6"></path>
+                            <path
+                                d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z">
+                            </path>
+                        </svg>
+                        <h2 class="title-font font-medium text-3xl text-gray-900">74</h2>
+                        <p class="leading-relaxed">blog</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                    <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <h2 class="title-font font-medium text-3xl text-gray-900">46</h2>
+                        <p class="leading-relaxed">activities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Form Name</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- <form> -->
+    <form method="post" action="index.php">
+        <div class="form-row justify-content-md-center my-3 mx-2">
+            <div class="col col-xs-5 col-lg-3 col-xl-2">I'd like to register as:</div>
+            <div class="col col-xs-5 col-lg-3 col-xl-2">
+                <select id="professionSelector" name="professionSelector" class="form-control" onchange="loadFormProfession()">
+                <option value="choose" selected>---CHOOSE---</option>
+                <option value="volunteer">Volunteer</option>
+                <option value="sstudent">School Student</option>
+                <!-- <option value="cstudent">College Student</option> -->
+                <option value="education">School / College / Private Institution</option>
+                <option value="shelter">NGO / Animal Shelter</option>
+                <option value="rescuer">Animal Rescuer</option>
+                <!-- <option value="govt-inst">Government (Hospital/Institution/Corporation)</option> -->
+                <!-- <option value="other">Other</option> -->
+            </select>
+            </div>
+        </div>
+        <hr>
+        <div id="elec">
+        </div>
+        <div id="eleb"></div>
+
+        <div class="form-row justify-content-md-center mb-3 mx-2">
+            <div class="col col-xs-5 col-lg-3 col-xl-2">
+                <!-- <button type="submit" class="btn btn-info btn-lg btn-block">Submit</button> -->
+                <a href="/confirm-mobile"><input type="button" class="btn btn-info btn-lg btn-block" value="Submit"></a>
+            </div>
+            <div class="col col-xs-5 col-lg-3 col-xl-2" onclick="cleanJunk()">
+                <button type="reset" class="btn btn-danger btn-lg btn-block">Reset Form</button>
+            </div>
+        </div>
+    </form>
+
+
+    <script>
+        function cleanJunk() {
+            $('#elec').nextUntil('#eleb').not("#submit").remove();
+        }
+
+        function cleanJunk_() {
+            $('#extra0').nextUntil('#extra1').remove();
+        }
+
+        function loadFormProfession() {
+            // $('#elec').empty();
+            cleanJunk();
+            let selected = document.getElementById("professionSelector").value;
+            if (selected.localeCompare("choose") != 0) {
+                let filename = "formProfession/" + selected + ".html";
+                $.get(filename, function(data) //Remember, same domain
+                    {
+                        $('#elec').after(data);
+                    });
+
+            }
+        }
+
+
+        function loadProfession() {
+            let selected = document.getElementById("profession").value;
+            let filename = '';
+            cleanJunk_();
+            if (selected.localeCompare("youtube") == 0) {
+                filename = "formProfession/volunteer/" + selected + ".html";
+                $.get(filename, function(data) //Remember, same domain
+                    {
+                        $('#extra0').after(data);
+                    });
+            } else if (selected.localeCompare("artist") == 0) {
+                filename = "formProfession/volunteer/" + selected + ".html";
+                $.get(filename, function(data) //Remember, same domain
+                    {
+                        $('#extra0').after(data);
+                    });
+            }
+
+        }
+    </script>
+</body>
+
+</html>
