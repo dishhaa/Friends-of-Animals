@@ -39,6 +39,10 @@
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+  *::selection{
+    background: #efa693;
+    color: black;
+}
 
 html {
   font-family: sans-serif;
